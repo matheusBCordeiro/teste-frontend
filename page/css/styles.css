@@ -1,0 +1,197 @@
+/* Menu
+----------------------------------------------- */
+.contain-to-grid {
+    width: 100%;
+    background: #152642;
+}
+#menu {
+    background:#152642;
+    /* fundo do menu */
+    color: #FFF;
+    /* cor da fonte do menu */
+    height: 50px;
+    width: 96%;
+    position: absolute  ;
+    z-index: 999;
+}
+
+#menu-left {
+    float: left;
+    width: 100%;
+    max-width: 700px;
+}
+
+#menu-right {
+    float: right;
+    width: 100%;
+    max-width: 300px;
+    text-align: right;
+}
+
+#menu ul,
+#menu li {
+    text-transform: uppercase;
+    /* Todas as fontes maiúsculas, se não quiser, apague esta linha */
+    margin: 0 auto;
+    padding: 0 0;
+    list-style: none;
+}
+
+#menu ul {
+    width: 100%;
+}
+
+#menu li {
+    float: left;
+    display: inline;
+    position: relative;
+    font-weight: 700;
+    color: #FFF;
+}
+
+#menu a {
+    display: block;
+    line-height: 50px;
+    padding: 0 14px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#menu li a:hover {
+    color: #fffFFF;
+    /* Cor do link no hover */
+    background: #063f89;
+    /* Fundo do link no hover */
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+}
+
+#menu-left input {
+    display: none;
+    margin: 0 0;
+    padding: 0 0;
+    width: 80px;
+    height: 50px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menu label {
+    background: url("http://i.imgur.com/Cx8HQMd.png") center no-repeat;
+    -moz-background-size: auto 50%;
+    -webkit-background-size: auto 50%;
+    background-size: auto 50%;
+    display: none;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+#menu ul.menus {
+    padding-top: 5px;
+    height: auto;
+    overflow: hidden;
+    width: 200px;
+    background:  #152642;
+    position: absolute;
+    z-index: 99;
+    display: none;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+#menu ul.menus li {
+    display: block;
+    width: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-shadow: none;
+}
+
+#menu ul.menus a {
+    color: #fffFFF;
+    line-height: 35px;
+}
+
+#menu li:hover ul.menus {
+    display: block;
+}
+
+#menu ul.menus a:hover {
+    background:   #063f89;
+    /* Fundo dos link das subabas no hover */
+    color: #ffffff;
+    /* Cor dos link das subabas no hover */
+    padding-left: 20px;
+}
+
+centro {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+
+body,
+input,
+button {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background: #F0F0F5;
+}
+
+.text-center {
+    font-size: 35px;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.content-text {
+    font-size: 30px;
+    text-align: justify;
+    /*text-justify: inter-word;*/
+
+    width: 800px;
+    margin: 0 auto;
+}
+
+.grid {
+    min-height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid>div {
+    display: flex;
+    flex-basis: calc(33.33% - 8px);
+    justify-content: center;
+    flex-direction: column;
+    /*margin-top: -300px;*/
+}
+
+.grid>div>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.grid>div>div>img{
+    width: 12%;
+    position: absolute;
+}
+
+.sub{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.row {
+    border-top: 1px solid #444444;
+}
