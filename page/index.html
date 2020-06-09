@@ -1,7 +1,20 @@
 <html>
 <link rel="stylesheet" href="css/styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+<meta charset=“utf-8” />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.js"
+    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+</script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+    integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous">
+</script>
 <header>
+    <title>RZ Sistemas</title>
+    <script src="js/index.js"></script>
     <div class="contain-to-grid"></div>
     <nav id='menu'>
         <centro>
@@ -56,75 +69,139 @@
             opções em CAD e plotters para Confecção</p>
     </div>
     <br />
+    <br />
+    <br />
     <div class="grid">
         <div class="box box1">
-            <div>
-                <img src="assets/erp-para-confeccao-icon.svg" alt="">
+            <div id="b1">
+                <img src="assets/erp-para-confeccao-icon.svg" alt="Erp para confecção">
+                <div class="div-btn-modal">
+                    <button type="button" class="ghost_btn semi-transparent" data-toggle="modal" data-target=".modal"
+                        data-paragraphs="10" id="btn-modal1">Informações</button>
+                </div>
                 <div class="sub">
                     <h2>Erp para Confecção</h2>
                     <p>Nosso sistema ERP é ideal para lojas que exigem controle e praticidade, permite o controle de
                         varias lojas permitindo separar estoque por filial, controlar movimento financeiro consolidado
                         ou separado por loja de maneira pratica e eficiente, é possível fazer integração com fabricas,
+                        <br />
                         funciona na Nuvem ou local</p>
+                    <br />
                 </div>
+            </div>
+            <div class="btn">
+                <button class="btn btn-light" id="btn-hide1"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Hide</button>
+                <button class="btn btn-light" id="btn-show1"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Show</button>
             </div>
         </div>
         <div class="box box2">
-            <div>
+            <div id="b2">
                 <img src="assets/erp-rede-de-lojas-icon.svg" alt="">
+                <div class="div-btn-modal">
+                    <button type="button" class="ghost_btn semi-transparent" data-toggle="modal" data-target=".modal"
+                        data-paragraphs="10" id="btn-modal2">Informações</button>
+                </div>
                 <div class="sub">
                     <h2>Erp para Lojas</h2>
                     <p>Nosso Erp para Confecção ajuda grandes confecções no Brasil a serem mais eficientes e rentáveis,
                         veja como sua confecção pode ser ágil e eficiente, controle sua empresa desde a formação do
-                        preço de venda, entrada de pedidos , monitore todos os processos para elaboração da peça final
+                        preço de venda, entrada de pedidos, <br /> monitore todos os processos para elaboração da peça
+                        final
                         como corte, enfesto, facções e expedição.</p>
                 </div>
             </div>
+            <div class="btn">
+                <button class="btn btn-light" id="btn-hide2"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Hide</button>
+                <button class="btn btn-light" id="btn-show2"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Show</button>
+            </div>
         </div>
         <div class="box box3">
-            <div>
+            <div id="b3">
                 <img src="assets/sistema-para-distribuidoras-icon.svg" alt="">
+                <br />
+                <div class="div-btn-modal">
+                    <button type="button" class="ghost_btn semi-transparent" data-toggle="modal" data-target=".modal"
+                        data-paragraphs="10" id="btn-modal3">Informações</button>
+                </div>
                 <div class="sub">
                     <h2>Sistema para Distribuidora</h2>
                     <p>Nosso sistema ERP para distribuidoras fornece soluções práticas para gestão diária de uma
-                        distribuidora, como automação da digitação de pedidos, controle financeiro, rotas de entrega,
+                        distribuidora, como automação da digitação de pedidos, controle financeiro, <br /> rotas de
+                        entrega,
                         controle financeiro total, gestão do estoque, automação do faturamento, alem dos complicados
                         cálculos de ICMS substituto.</p>
                 </div>
+            </div>
+            <div class="btn">
+                <button class="btn btn-light" id="btn-hide3"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Hide</button>
+                <button class="btn btn-light" id="btn-show3"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Show</button>
             </div>
         </div>
     </div>
     <br />
     <br />
+    <br />
     <hr class="row">
+    <br />
     <br />
     <br />
     <div class="grid">
         <div class="box box1">
-            <div>
+            <div id="b4">
                 <img src="assets/cad-para-confeccao-icon.svg" alt="">
+                <div class="div-btn-modal">
+                    <button type="button" class="ghost_btn semi-transparent" data-toggle="modal" data-target=".modal"
+                        data-paragraphs="10" id="btn-modal4">Informações</button>
+                </div>
                 <div class="sub">
                     <h2>CAD para Confecção</h2>
                     <p>RZ CAD Têxtil é o CAD para confecção ideal, tem a melhor relação custo benefício do mercado,
                         possui praticamente todas as funções dos Softwares concorrentes como Audaces Vestuário, Lectra e
-                        Gerber, por um preço mais acessível, além disso ele é desenvolvido 100% no Brasil.</p>
+                        Gerber, por um preço mais acessível, <br /> além disso ele é desenvolvido 100% no Brasil.</p>
                 </div>
+            </div>
+            <div class="btn">
+                <button class="btn btn-light" id="btn-hide4"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Hide</button>
+                <button class="btn btn-light" id="btn-show4"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Show</button>
             </div>
         </div>
         <div class="box box2">
-            <div>
+            <div id="b5">
                 <img src="assets/plotter-para-confeccao-icon.svg" alt="">
+                <div class="div-btn-modal">
+                    <button type="button" class="ghost_btn semi-transparent" data-toggle="modal" data-target=".modal"
+                        data-paragraphs="10" id="btn-modal5">Informações</button>
+                </div>
                 <div class="sub">
                     <h2>Plotter Confecção</h2>
-                    <p>RZ CAD Têxtil é o CAD para confecção ideal, tem a melhor relação custo benefício do mercado,
-                        possui praticamente todas as funções dos Softwares concorrentes como Audaces Vestuário, Lectra e
-                        Gerber, por um preço mais acessível, além disso ele é desenvolvido 100% no Brasil.</p>
+                    <p>A RZ Sistemas fornece Plotters para confecção, a linha Rz Textil Jet compatível com Rz CAD,
+                        Audaces, Optitex, Lectra, Gerber, temos diversos modelos com velocidades e tamanhos diferentes.
+                        A linha Rz Têxtil Jet BR possui modelos com cabeças de impressão de: 120cm, 160cm, 185cm e
+                        220cm.</p>
                 </div>
+            </div>
+            <div class="btn">
+                <button class="btn btn-light" id="btn-hide5"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Hide</button>
+                <button class="btn btn-light" id="btn-show5"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Show</button>
             </div>
         </div>
         <div class="box box3">
-            <div>
+            <div id="b6">
                 <img src="assets/venda-a-pronta-entrega-icon.svg" alt="">
+                <div class="div-btn-modal">
+                    <button type="button" class="ghost_btn semi-transparent" data-toggle="modal" data-target=".modal"
+                        data-paragraphs="10" id="btn-modal6">Informações</button>
+                </div>
                 <div class="sub">
                     <h2>Venda a pronta entrega</h2>
                     <p>Vender a pronta entrega requer mais que apenas um solução eficiente de força de vendas, requer a
@@ -133,8 +210,39 @@
                     </p>
                 </div>
             </div>
+            <div class="btn">
+                <button class="btn btn-light" id="btn-hide6"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Hide</button>
+                <button class="btn btn-light" id="btn-show6"
+                    style="margin: 5px; color: rgb(211, 208, 208);">Show</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                    <article></article>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+<hr class="row" style="width: 100%; justify-content: center;">
+<footer class="footer">
+    <span>
+        © 2020 Sistemas ERP para confecção, Sistemas de Gestão, Controle financeiro, Nota Eletrônica. Todos os direitos reservados.
+    </span>
+</footer>
 
 </html>

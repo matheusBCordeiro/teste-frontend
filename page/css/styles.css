@@ -4,14 +4,15 @@
     width: 100%;
     background: #152642;
 }
+
 #menu {
-    background:#152642;
+    background: #152642;
     /* fundo do menu */
     color: #FFF;
     /* cor da fonte do menu */
     height: 50px;
     width: 96%;
-    position: absolute  ;
+    position: absolute;
     z-index: 999;
 }
 
@@ -99,7 +100,7 @@
     height: auto;
     overflow: hidden;
     width: 200px;
-    background:  #152642;
+    background: #152642;
     position: absolute;
     z-index: 99;
     display: none;
@@ -124,7 +125,7 @@
 }
 
 #menu ul.menus a:hover {
-    background:   #063f89;
+    background: #063f89;
     /* Fundo dos link das subabas no hover */
     color: #ffffff;
     /* Cor dos link das subabas no hover */
@@ -182,16 +183,66 @@ button {
     flex-direction: row;
 }
 
-.grid>div>div>img{
+.grid>div>div>img {
     width: 12%;
     position: absolute;
 }
 
-.sub{
+.sub {
     text-align: center;
     margin-top: 200px;
 }
 
 .row {
     border-top: 1px solid #444444;
+}
+
+.div-btn-modal {
+    flex: 1 0 calc(25% - 10px);
+    margin: 5px;
+    width: 12%;
+    position: absolute;
+}
+
+.div-btn-modal::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+.ghost_btn {
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 600;
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 0.65em 1.7em;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 2px;
+    transition: all 0.6s ease 0s;
+    cursor: pointer;
+    left: 20px;
+    margin-top: -60px;
+
+}
+
+a.ghost_btn:hover {
+    background: #fff;
+    color: #000;
+
+}
+
+.semi-transparent:hover {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.footer {
+    grid-area: footer;
+    color: #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
 }
